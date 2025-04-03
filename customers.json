@@ -1,0 +1,33 @@
+{
+  "Name": "customer_table",
+  "StorageDescriptor": {
+    "Columns": [
+      {
+        "Name": "customer_od",
+        "Type": "int"
+      },
+      {
+        "Name": "full_name",
+        "Type": "string"
+      },
+      {
+        "Name": "email_address",
+        "Type": "string"
+      }
+    ], 
+    "Location": "s3://my-s3-bucket-2143676/input_fol/customers.csv",
+    "InputFormat": "org.apache.hadoop.mapred.TextInputFormat",
+    "OutputFormat": "org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat",
+    "SerdeInfo": {
+      "SerializationLibrary": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
+      "Parameters": {
+        "serialization.format": ",",
+        "field.delim": ","
+      }
+    }
+  },
+  "TableType": "EXTERNAL_TABLE",
+  "Parameters": {
+    "classification": "csv"
+  }
+}

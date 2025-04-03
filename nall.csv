@@ -1,0 +1,11 @@
+id,name,department,salary,gender
+1,John,Doe,50000,Male
+2,Jane,Smith,,Female
+3,Robert,,65000,
+4,Mary,Johnson,56000,Female
+5,Michael,,75000,Male
+6,Susan,,50000,Female
+7,David,Miller,,Male
+8,Linda,Williams,72000,
+9,William,Anderson,,Male
+10,Emily,,55000,Female
