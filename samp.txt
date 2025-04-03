@@ -1,1 +1,2 @@
 this is a new sample text file
+this line is added via github chrome 
